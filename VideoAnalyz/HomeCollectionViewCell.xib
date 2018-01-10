@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="VideoAnalyz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爱奇艺" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8M-tP-1vX">
+                        <rect key="frame" x="0.0" y="60" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="8DR-kA-oeq"/>
+                            <constraint firstAttribute="height" constant="20" id="co7-7C-oaK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K7J-ay-nFa">
+                        <rect key="frame" x="20" y="0.0" width="60" height="60"/>
+                        <color key="backgroundColor" red="0.31098090277777779" green="0.42469618055555558" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="iMR-PL-atZ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="L8M-tP-1vX" secondAttribute="bottom" id="9bq-1K-Y2U"/>
+                <constraint firstItem="K7J-ay-nFa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CcG-oN-LeL"/>
+                <constraint firstItem="L8M-tP-1vX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="X8K-Qu-uXF"/>
+                <constraint firstAttribute="trailing" secondItem="K7J-ay-nFa" secondAttribute="trailing" constant="20" id="gzT-kT-QX1"/>
+                <constraint firstItem="K7J-ay-nFa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="j74-8j-ogB"/>
+                <constraint firstAttribute="trailing" secondItem="L8M-tP-1vX" secondAttribute="trailing" id="rG2-h1-HR2"/>
+            </constraints>
+            <connections>
+                <outlet property="iconIV" destination="K7J-ay-nFa" id="wDf-4k-vyc"/>
+                <outlet property="title" destination="L8M-tP-1vX" id="C6N-2v-FHb"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

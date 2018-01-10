@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>urlName</key>
+		<string>各种VIP视频解析(推荐)</string>
+		<key>url</key>
+		<string>http://www.5ifxw.com/vip/</string>
+		<key>urlId</key>
+		<string>url</string>
+	</dict>
+	<dict>
+		<key>urlName</key>
+		<string>全民vip视频解析</string>
+		<key>url</key>
+		<string>http://www.qmaile.com/</string>
+		<key>urlId</key>
+		<string>sos</string>
+	</dict>
+	<dict>
+		<key>urlName</key>
+		<string>疯狂VIP解析</string>
+		<key>url</key>
+		<string>http://www.v718.com/</string>
+		<key>urlId</key>
+		<string>url</string>
+	</dict>
+	<dict>
+		<key>urlName</key>
+		<string>更多解析网址请在首页添加</string>
+		<key>url</key>
+		<string></string>
+		<key>urlId</key>
+		<string></string>
+	</dict>
+</array>
+</plist>
