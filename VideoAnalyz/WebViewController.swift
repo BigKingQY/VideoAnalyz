@@ -86,13 +86,12 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         
         print("webViewDidFinishLoad")
         
-//        self.title = webView.stringByEvaluatingJavaScript(from: "document.location.href")!
-        self.title = webView.stringByEvaluatingJavaScript(from: "document.title")!
+        self.title = webView.stringByEvaluatingJavaScript(from: "document.location.href")!
+//        self.title = webView.stringByEvaluatingJavaScript(from: "document.title")!
         self.currentUrl = webView.stringByEvaluatingJavaScript(from: "document.location.href")!
         if !self.historyUrls.contains(self.currentUrl as Any) {
             self.historyUrls.add(self.currentUrl as Any)
         }
-        
         for i in 0..<self.dataArray.count {
             if (self.dataArray[i] as! NSDictionary).value(forKey: "url") as? String == self.currentUrl {
                 let urlId = (self.dataArray[i] as! NSDictionary).value(forKey: "urlId") as? String
@@ -224,15 +223,6 @@ class WebViewController: UIViewController, UIWebViewDelegate {
     @objc func deviceOrientationDidChange(_ orientation:UIDeviceOrientation) {
         self.toolBar.frame = CGRect(x: 0, y: UIScreen.main.bounds.size.height - 44, width: UIScreen.main.bounds.size.width, height: 44)
         self.alertView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
-//        switch orientation {
-//        case .portrait:
-//            self.alertView.backView.frame = CGRect(x: 40, y: 143, width: UIScreen.main.bounds.size.width - 80, height: 380)
-//        case .landscapeLeft,.landscapeRight:
-//            self.alertView.backView.frame = CGRect(x: 40, y: 50, width: UIScreen.main.bounds.size.width - 80, height: 380)
-//        default:
-//            break
-//        }
-        
     }
     
     
